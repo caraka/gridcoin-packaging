@@ -1,0 +1,22 @@
+Index: gridcoin-3.3.3.8/gridcoinstake.pro
+===================================================================
+--- gridcoin-3.3.3.8.orig/gridcoinstake.pro
++++ gridcoin-3.3.3.8/gridcoinstake.pro
+@@ -6,7 +6,7 @@ DEFINES += QT_GUI BOOST_THREAD_USE_LIB B
+ CONFIG += no_include_pwd
+ CONFIG += thread
+ QT += core gui network
+-QT += qaxcontainer
++#QT += qaxcontainer
+ #QT += axserver
+ #QT += widgets
+ 
+@@ -18,7 +18,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
+ }
+ 
+ CONFIG += thread
+-CONFIG += qaxcontainer
++#CONFIG += qaxcontainer
+ CONFIG += exceptions
+ #CONFIG += qaxserver dll
+ 

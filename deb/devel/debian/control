@@ -1,0 +1,53 @@
+Source: gridcoinresearch
+Section: utils
+Priority: optional
+Maintainer: Richard Leckinger <caraka3@gmail.com>
+Build-Depends: debhelper (>= 9),
+	devscripts,
+	automake,
+	libtool,
+	libssl-dev,
+	libdb-dev,
+	libdb++-dev,
+	libboost-all-dev,
+	libqrencode-dev,
+	qt-sdk
+Standards-Version: 3.9.6
+Homepage: http://www.gridcoin.us
+#Vcs-Git: git://anonscm.debian.org/collab-maint/gridcoinresearch.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/gridcoinresearch.git;a=summary
+
+Package: gridcoinresearchd
+Architecture: any
+Depends:libboost-all-dev,
+	${shlibs:Depends},
+	${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Bitcoin is a free open source peer-to-peer electronic cash system that
+ is completely decentralized, without the need for a central server or
+ trusted parties. Users hold the crypto keys to their own money and
+ transact directly with each other, with the help of a P2P network to
+ check for double-spending.
+ .
+ Full transaction history is stored locally at each client. This
+ requires 20+ GB of space, slowly growing.
+ .
+ This package provides the daemon, bitcoind, and the CLI tool
+ bitcoin-cli to interact with the daemon.
+
+Package: gridcoinresearch
+Architecture: any
+Depends:libboost-all-dev,
+	${shlibs:Depends},
+	${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Bitcoin is a free open source peer-to-peer electronic cash system that
+ is completely decentralized, without the need for a central server or
+ trusted parties. Users hold the crypto keys to their own money and
+ transact directly with each other, with the help of a P2P network to
+ check for double-spending.
+ .
+ Full transaction history is stored locally at each client. This
+ requires 20+ GB of space, slowly growing.
+ .
+ This package provides Bitcoin-Qt, a GUI for Bitcoin based on Qt.
