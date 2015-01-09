@@ -1,2 +1,4 @@
 02_qm2ts.patch
 01_qt-qax.patch
+50_fix-upnp-feature-compilation.patch
+51_fix_qrcode_support.patch
