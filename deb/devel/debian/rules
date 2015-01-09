@@ -23,7 +23,7 @@ include /usr/share/dpkg/default.mk
 
 override_dh_auto_build:
 	cd src; mkdir -p obj/zerocoin && chmod +x leveldb/build_detect_platform
-	cd src; $(MAKE) -f makefile.unix USE_UPNP=- 
+	cd src; $(MAKE) -f makefile.unix
 	$(MAKE)
 
 override_dh_auto_clean:
@@ -33,7 +33,7 @@ override_dh_auto_clean:
 override_dh_auto_configure:
 #	dh_auto_configure -- \
 #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
-	qmake gridcoinstake.pro USE_QRCODE=1 USE_UPNP=-
+	qmake gridcoinstake.pro USE_QRCODE=1
 
 # Ensure wrapper is set executable
 binary-post-install/gridcoinresearchd:

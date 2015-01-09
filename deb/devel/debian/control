@@ -21,6 +21,7 @@ Homepage: http://www.gridcoin.us
 Package: gridcoinresearchd
 Architecture: any
 Depends:libboost-all-dev,
+	miniupnpc,
 	${shlibs:Depends},
 	${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -39,6 +40,7 @@ Description: peer-to-peer network based digital currency - daemon
 Package: gridcoinresearch-qt
 Architecture: any
 Depends:libboost-all-dev,
+	miniupnpc,
 	${shlibs:Depends},
 	${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
