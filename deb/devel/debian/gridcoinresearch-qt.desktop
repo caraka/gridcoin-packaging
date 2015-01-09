@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gridcoin
+Comment=Gridcoin P2P Cryptocurrency
+Exec=/usr/bin/gridcoinresearch %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/grc-small.png
+MimeType=x-scheme-handler/gridcoin;
+Categories=Office;Finance;
+Name[en_NZ]=gridcoinresearch-qt

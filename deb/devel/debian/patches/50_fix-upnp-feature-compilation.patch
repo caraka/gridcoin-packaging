@@ -1,0 +1,28 @@
+From: Matthias Bach <marix@marix.org>
+Date: 2015-01-02 13:11:29 +0100
+Subject: Fix compilation of UPNP feature
+References: https://github.com/gridcoin/Gridcoin-Research/pull/12
+Upstream: submitted
+
+The inclusion of the miniupnpc library headers needs to be adjusted, otherwise
+Gridcoin Research can only be compiled without UPNP support.
+
+diff --git a/src/net.cpp b/src/net.cpp
+index 2a25bf4..b8efad3 100644
+--- a/src/net.cpp
++++ b/src/net.cpp
+@@ -16,10 +16,10 @@
+ #endif
+ 
+ #ifdef USE_UPNP
+-#include <miniwget.h>
+-#include <miniupnpc.h>
+-#include <upnpcommands.h>
+-#include <upnperrors.h>
++#include <miniupnpc/miniwget.h>
++#include <miniupnpc/miniupnpc.h>
++#include <miniupnpc/upnpcommands.h>
++#include <miniupnpc/upnperrors.h>
+ #endif
+ 
+ using namespace std;

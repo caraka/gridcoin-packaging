@@ -1,5 +1,7 @@
-gridcoinresearch (3.3.4.2-vivid1) vivid; urgency=low
+gridcoinresearch (3.3.4.5-utopic2) utopic; urgency=low
 
-  * Initial release
+  * -add upnp support patch
+    -add qrcode support patch
+    -update pixmap
 
- -- Richard Leckinger <caraka3@gmail.com>  Wed, 07 Jan 2015 16:38:58 +1300
+ -- Richard Leckinger <caraka3@gmail.com>  Fri, 09 Jan 2015 16:38:58 +1300

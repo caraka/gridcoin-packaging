@@ -1,5 +1,5 @@
 gridcoinresearch usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
-share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/gridcoin-qt.desktop usr/share/applications
+share/pixmaps/grc-small.png usr/share/pixmaps
+debian/gridcoinresearch-qt.desktop usr/share/applications
