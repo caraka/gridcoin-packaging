@@ -1,7 +1,8 @@
-gridcoinresearch (3.3.4.5-utopic2) utopic; urgency=low
+gridcoinresearch (3.3.4.6-0ubuntu1) utopic; urgency=low
 
-  * -add upnp support patch
-    -add qrcode support patch
-    -update pixmap
+  * Fixed Orphan mask (showorphans=true)
+    Fixed global status indicator size to work on 8.1 and also made bigger
+    Added ability to restake if wallet orphans
+    3d614d2
 
  -- Richard Leckinger <caraka3@gmail.com>  Fri, 09 Jan 2015 16:38:58 +1300

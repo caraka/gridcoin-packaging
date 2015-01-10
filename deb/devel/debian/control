@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 9),
 	libssl-dev,
 	libdb-dev,
 	libdb++-dev,
-	libboost-all-dev,
+	libboost-all-dev (>= 1.55),
 	libqrencode-dev,
 	libminiupnpc-dev,
 	qt-sdk
@@ -24,18 +24,11 @@ Depends:libboost-all-dev,
 	miniupnpc,
 	${shlibs:Depends},
 	${misc:Depends}
-Description: peer-to-peer network based digital currency - daemon
- Bitcoin is a free open source peer-to-peer electronic cash system that
- is completely decentralized, without the need for a central server or
- trusted parties. Users hold the crypto keys to their own money and
- transact directly with each other, with the help of a P2P network to
- check for double-spending.
- .
- Full transaction history is stored locally at each client. This
- requires 20+ GB of space, slowly growing.
- .
- This package provides the daemon, bitcoind, and the CLI tool
- bitcoin-cli to interact with the daemon.
+Description: Gridcoin is a peer-to-peer cryptocurrency that uses distributed computing (BOINC) to benefit humanity by advancing the progress of  		medicine, biology, climatology, mathematics, astrophysics, and more.
+	
+	The aim of the Gridcoin project is to shift the computational power primarily to BOINC projects whilst the POW mining calculations become a 		second priority - so as the mining network scales up, the network's BOINC contribution is scaled up in tandem.
+ 	
+ 	This package provides the headless daemon, gridcoinresearchd.
 
 Package: gridcoinresearch-qt
 Architecture: any
@@ -43,14 +36,9 @@ Depends:libboost-all-dev,
 	miniupnpc,
 	${shlibs:Depends},
 	${misc:Depends}
-Description: peer-to-peer network based digital currency - Qt GUI
- Bitcoin is a free open source peer-to-peer electronic cash system that
- is completely decentralized, without the need for a central server or
- trusted parties. Users hold the crypto keys to their own money and
- transact directly with each other, with the help of a P2P network to
- check for double-spending.
- .
- Full transaction history is stored locally at each client. This
- requires 20+ GB of space, slowly growing.
- .
- This package provides Bitcoin-Qt, a GUI for Bitcoin based on Qt.
+Description: Gridcoin is a peer-to-peer cryptocurrency that uses distributed computing (BOINC) to benefit humanity by advancing the progress of  		medicine, biology, climatology, mathematics, astrophysics, and more.
+	
+	The aim of the Gridcoin project is to shift the computational power primarily to BOINC projects whilst the POW mining calculations become a 		second priority - so as the mining network scales up, the network's BOINC contribution is scaled up in tandem.
+	
+	This package provides gridcoinresearch, a GUI for Gridcoin based on Qt.
+
