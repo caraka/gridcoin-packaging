@@ -1,0 +1,11 @@
+[Protocol]
+exec=gridcoinresearch-qt '%u'
+protocol=gridcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

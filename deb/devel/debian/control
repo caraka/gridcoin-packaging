@@ -1,44 +1,51 @@
 Source: gridcoinresearch
 Section: utils
 Priority: optional
-Maintainer: Richard Leckinger <caraka3@gmail.com>
+Maintainer: Rob Halford <contact@gridcoin.us>
 Build-Depends: debhelper (>= 9),
 	devscripts,
 	automake,
 	libtool,
+  bash-completion,
 	libssl-dev,
-	libdb-dev,
+	pkg-config,
 	libdb++-dev,
-	libboost-all-dev (>= 1.55),
+  libboost-filesystem-dev (>= 1.48) | libboost-filesystem1.48-dev,
+  libboost-program-options-dev (>= 1.48) | libboost-program-options1.48-dev,
+  libboost-system-dev (>= 1.48) | libboost-system1.48-dev,
+  libboost-thread-dev (>= 1.48) | libboost-thread1.48-dev,
+  libboost-test-dev (>= 1.48) | libboost-test1.48-dev,
 	libqrencode-dev,
+	libprotobuf-dev,
+	protobuf-compiler,
 	libminiupnpc-dev,
-	qt-sdk
-Standards-Version: 3.9.6
+	qt4-default,
+	qt4-qmake,
+	qt4-dev-tools
+Standards-Version: 3.9.5
 Homepage: http://www.gridcoin.us
 #Vcs-Git: git://github.com/gridcoin/Gridcoin-Research.git
 #Vcs-Browser: https://github.com/gridcoin/Gridcoin-Research
 
 Package: gridcoinresearchd
 Architecture: any
-Depends:libboost-all-dev,
-	miniupnpc,
-	${shlibs:Depends},
+Depends:${shlibs:Depends},
 	${misc:Depends}
-Description: Gridcoin is a peer-to-peer cryptocurrency that uses distributed computing (BOINC) to benefit humanity by advancing the progress of  		medicine, biology, climatology, mathematics, astrophysics, and more.
-	
-	The aim of the Gridcoin project is to shift the computational power primarily to BOINC projects whilst the POW mining calculations become a 		second priority - so as the mining network scales up, the network's BOINC contribution is scaled up in tandem.
- 	
+Description: Gridcoin is a peer-to-peer cryptocurrency using BOINC
+  Gridcoin is a peer-to-peer cryptocurrency that uses distributed computing (BOINC) to benefit humanity by advancing the progress of medicine,    biology, climatology, mathematics, astrophysics, and more.
+	.
+	The aim of the Gridcoin project is to shift the computational power primarily to BOINC projects whilst the POW mining calculations become a second priority - so as the mining network scales up, the network's BOINC contribution is scaled up in tandem.
+ 	.
  	This package provides the headless daemon, gridcoinresearchd.
 
 Package: gridcoinresearch-qt
 Architecture: any
-Depends:libboost-all-dev,
-	miniupnpc,
-	${shlibs:Depends},
+Depends:${shlibs:Depends},
 	${misc:Depends}
-Description: Gridcoin is a peer-to-peer cryptocurrency that uses distributed computing (BOINC) to benefit humanity by advancing the progress of  		medicine, biology, climatology, mathematics, astrophysics, and more.
-	
-	The aim of the Gridcoin project is to shift the computational power primarily to BOINC projects whilst the POW mining calculations become a 		second priority - so as the mining network scales up, the network's BOINC contribution is scaled up in tandem.
-	
+Description: Gridcoin is a peer-to-peer cryptocurrency using BOINC
+  Gridcoin is a peer-to-peer cryptocurrency that uses distributed computing (BOINC) to benefit humanity by advancing the progress of medicine, biology, climatology, mathematics, astrophysics, and more.
+	.
+	The aim of the Gridcoin project is to shift the computational power primarily to BOINC projects whilst the POW mining calculations become a second priority - so as the mining network scales up, the network's BOINC contribution is scaled up in tandem.
+	.
 	This package provides gridcoinresearch, a GUI for Gridcoin based on Qt.
 

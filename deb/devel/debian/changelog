@@ -1,8 +1,102 @@
-gridcoinresearch (3.3.4.6-0ubuntu1) utopic; urgency=low
+gridcoinresearch (3.3.5.7-2-precise1) precise; urgency=medium
 
-  * Fixed Orphan mask (showorphans=true)
-    Fixed global status indicator size to work on 8.1 and also made bigger
-    Added ability to restake if wallet orphans
-    3d614d2
+  * Upstream changes only, first precise build test
 
- -- Richard Leckinger <caraka3@gmail.com>  Fri, 09 Jan 2015 16:38:58 +1300
+ -- Richard Leckinger <caraka3@gmail.com>  Wed, 14 Jan 2015 14:31:54 +1300
+
+gridcoinresearch (3.3.5.7-2-vivid1) vivid; urgency=medium
+
+  * Upstream changes only
+
+ -- Richard Leckinger <caraka3@gmail.com>  Wed, 14 Jan 2015 14:17:25 +1300
+
+gridcoinresearch (3.3.5.7-2-utopic1) utopic; urgency=medium
+
+  * Upstream changes only
+
+ -- Richard Leckinger <caraka3@gmail.com>  Wed, 14 Jan 2015 14:15:53 +1300
+
+gridcoinresearch (3.3.5.7-2-trusty1) trusty; urgency=low
+
+  * Upstream changes only
+
+ -- Richard Leckinger <caraka3@gmail.com>  Wed, 14 Jan 2015 14:12:08 +1300
+
+gridcoinresearch (3.3.5.5-vivid5) vivid; urgency=low
+
+  * Upstream-3.3.5.5
+    DOS or Ban submitter of bad cpid blocks
+    Ban submitters resulting in RSA account balance < 0 - and retally during bl$
+    Added RSA Weight to target stake hash
+    Removed some logging
+    Modified kernel solution to be 50% harder in-client therefore 50% easier du$
+    Starts @ 114792
+
+    Packaging-ubuntu5
+    restore qaxcontainer using qmake-qt4
+    removed fix_icon patch 
+
+ -- Richard Leckinger <caraka3@gmail.com>  Wed, 14 Jan 2015 11:32:44 +1300
+
+gridcoinresearch (3.3.5.5-utopic5) utopic; urgency=medium
+
+  * Upstream-3.3.5.5
+    DOS or Ban submitter of bad cpid blocks
+    Ban submitters resulting in RSA account balance < 0 - and retally during bl$
+    Added RSA Weight to target stake hash
+    Removed some logging
+    Modified kernel solution to be 50% harder in-client therefore 50% easier du$
+    Starts @ 114792
+
+    Packaging-ubuntu5
+    restore qaxcontainer using qmake-qt4
+    removed fix_icon patch 
+
+ -- Richard Leckinger <caraka3@gmail.com>  Wed, 14 Jan 2015 11:25:51 +1300
+
+gridcoinresearch (3.3.5.5-trusty5) trusty; urgency=low
+
+  * Upstream-3.3.5.5
+    DOS or Ban submitter of bad cpid blocks
+    Ban submitters resulting in RSA account balance < 0 - and retally during block rejection (orphans)
+    Added RSA Weight to target stake hash
+    Removed some logging
+    Modified kernel solution to be 50% harder in-client therefore 50% easier during remote block check (in hopes to eliminate the orphans)
+    Starts @ 114792
+    
+    Packaging-ubuntu5
+    restore qaxcontainer using qmake-qt4
+    removed fix_icon patch
+ 
+ -- Richard Leckinger <caraka3@gmail.com>  Wed, 14 Jan 2015 11:17:06 +1300
+
+gridcoinresearch (3.3.5.5-vivid2) vivid; urgency=low
+
+  * Upstream 3.3.5.5 + packaging vivid2 changes
+    DOS or Ban submitter of bad cpid blocks
+    Ban submitters resulting in RSA account balance < 0 - and retally during block rejection (orphans)
+    Added RSA Weight to target stake hash
+    Removed some logging
+    Modified kernel solution to be 50% harder in-client therefore 50% easier during remote block check (in hopes to eliminate the orphans)
+    Starts @ 114792
+    Packaging: Remove boost 1.55 dependency (make generic)
+    Remove unnessary file installations that conflict with bitcoin-qt
+    Packaging: Force qmake-qt4
+    Fix window icon patch
+    Narrowed from libboost-all to particular libraries for build-depends
+ 
+ -- Richard Leckinger <caraka3@gmail.com>  Tue, 13 Jan 2015 19:17:06 +1300
+
+gridcoinresearch (3.3.5.5-vivid1) vivid; urgency=low
+
+  * Upstream + packaging changes
+    DOS or Ban submitter of bad cpid blocks
+    Ban submitters resulting in RSA account balance < 0 - and retally during block rejection (orphans)
+    Added RSA Weight to target stake hash
+    Removed some logging
+    Modified kernel solution to be 50% harder in-client therefore 50% easier during remote block check (in hopes to eliminate the orphans)
+    Starts @ 114792
+    Packaging: Remove boost 1.55 dependency (make generic)
+    Remove unnessary file installations that conflict with bitcoin-qt
+ 
+ -- Richard Leckinger <caraka3@gmail.com>  Tue, 13 Jan 2015 15:17:06 +1300

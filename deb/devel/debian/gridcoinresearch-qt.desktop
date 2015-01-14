@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Gridcoin
+Name=Gridcoinresearch-qt
+Name[en_NZ]=Gridcoinresearch-qt
 Comment=Gridcoin P2P Cryptocurrency
 Exec=/usr/bin/gridcoinresearch %u
 Terminal=false
@@ -8,4 +9,3 @@ Type=Application
 Icon=/usr/share/pixmaps/grc-small.png
 MimeType=x-scheme-handler/gridcoin;
 Categories=Office;Finance;
-Name[en_NZ]=gridcoinresearch-qt
